@@ -1,12 +1,10 @@
-package ru.kata.spring.boot_security.demo.dao;
+package ru.kata.spring.bootstrap.service;
 
-import org.springframework.stereotype.Repository;
-import ru.kata.spring.boot_security.demo.models.User;
+import ru.kata.spring.bootstrap.models.User;
 
 import java.util.List;
 
-@Repository
-public interface UserDao {
+public interface UserService {
     List<User> allUsers();
 
     User showUser(Long id);
@@ -18,4 +16,6 @@ public interface UserDao {
     void delUser(Long id);
 
     User findByUsername(String name);
+
+    User findByUserEmail(String email);
 }

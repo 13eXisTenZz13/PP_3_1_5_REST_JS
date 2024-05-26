@@ -1,12 +1,12 @@
-package ru.kata.spring.boot_security.demo;
+package ru.kata.spring.bootstrap;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
-import ru.kata.spring.boot_security.demo.service.RoleService;
-import ru.kata.spring.boot_security.demo.service.UserService;
-import ru.kata.spring.boot_security.demo.models.Role;
-import ru.kata.spring.boot_security.demo.models.User;
+import ru.kata.spring.bootstrap.service.RoleService;
+import ru.kata.spring.bootstrap.service.UserService;
+import ru.kata.spring.bootstrap.models.Role;
+import ru.kata.spring.bootstrap.models.User;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -21,9 +21,9 @@ public class SpringBootSecurityDemoApplication {
 			UserService userService = context.getBean(UserService.class);
 			RoleService roleService = context.getBean(RoleService.class);
 
-			User user1 = new User("Admin", "Adminov", "admin");
-			User user2 = new User("Pavel", "Pavlov", "pavel");
-			User user3 = new User("Ivan", "Ivanov","ivan");
+			User user1 = new User("Admin", "Adminov", "admin", 20, "Admin@mail.com");
+			User user2 = new User("Pavel", "Pavlov", "pavel", 30, "Pavel@mail.com");
+			User user3 = new User("Ivan", "Ivanov", "ivan", 40, "Ivan@mail.com");
 
 			Role roleAdmin = new Role("ROLE_ADMIN");
 			Role roleUser = new Role("ROLE_USER");
@@ -49,5 +49,4 @@ public class SpringBootSecurityDemoApplication {
 		} catch (Exception ignored) {
 		}
 	}
-
 }
