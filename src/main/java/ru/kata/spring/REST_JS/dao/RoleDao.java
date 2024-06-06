@@ -1,7 +1,7 @@
-package ru.kata.spring.bootstrap.dao;
+package ru.kata.spring.REST_JS.dao;
 
 import org.springframework.stereotype.Repository;
-import ru.kata.spring.bootstrap.models.Role;
+import ru.kata.spring.REST_JS.models.Role;
 
 import java.util.List;
 

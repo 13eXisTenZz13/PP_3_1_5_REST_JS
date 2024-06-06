@@ -1,6 +1,6 @@
-package ru.kata.spring.bootstrap.service;
+package ru.kata.spring.REST_JS.service;
 
-import ru.kata.spring.bootstrap.models.Role;
+import ru.kata.spring.REST_JS.models.Role;
 
 import java.util.List;
 

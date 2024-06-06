@@ -1,4 +1,4 @@
-package ru.kata.spring.bootstrap.service;
+package ru.kata.spring.REST_JS.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -7,8 +7,8 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import ru.kata.spring.bootstrap.dao.UserDao;
-import ru.kata.spring.bootstrap.models.User;
+import ru.kata.spring.REST_JS.dao.UserDao;
+import ru.kata.spring.REST_JS.models.User;
 
 import java.util.List;
 
@@ -43,8 +43,8 @@ public class UserServiceImpl implements UserService, UserDetailsService {
 
     @Override
     @Transactional
-    public void updateUser(User user) {
-        if (!user.getPassword().equals(userDao.showUser(user.getId()).getPassword())) {
+    public void updateUser(Long id, User user) {
+        if (!user.getPassword().equals(userDao.showUser(id).getPassword())) {
             user.setPassword(passwordEncoder.encode(user.getPassword()));
         }
         userDao.updateUser(user);

@@ -1,4 +1,4 @@
-package ru.kata.spring.bootstrap.configs;
+package ru.kata.spring.REST_JS.configs;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;

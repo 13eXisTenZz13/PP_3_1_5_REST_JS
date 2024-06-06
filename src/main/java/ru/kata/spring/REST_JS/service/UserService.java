@@ -1,6 +1,6 @@
-package ru.kata.spring.bootstrap.service;
+package ru.kata.spring.REST_JS.service;
 
-import ru.kata.spring.bootstrap.models.User;
+import ru.kata.spring.REST_JS.models.User;
 
 import java.util.List;
 
@@ -11,7 +11,7 @@ public interface UserService {
 
     void saveUser(User user);
 
-    void updateUser(User user);
+    void updateUser(Long id, User user);
 
     void delUser(Long id);
 

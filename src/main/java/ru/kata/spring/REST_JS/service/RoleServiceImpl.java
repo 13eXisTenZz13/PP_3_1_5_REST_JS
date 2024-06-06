@@ -1,15 +1,15 @@
-package ru.kata.spring.bootstrap.service;
+package ru.kata.spring.REST_JS.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import ru.kata.spring.bootstrap.dao.RoleDao;
-import ru.kata.spring.bootstrap.models.Role;
+import ru.kata.spring.REST_JS.dao.RoleDao;
+import ru.kata.spring.REST_JS.models.Role;
 
 import java.util.List;
 
 @Service
-public class RoleServiceImpl implements RoleService {
+public class RoleServiceImpl implements ru.kata.spring.REST_JS.service.RoleService {
     private final RoleDao roleDao;
 
     @Autowired

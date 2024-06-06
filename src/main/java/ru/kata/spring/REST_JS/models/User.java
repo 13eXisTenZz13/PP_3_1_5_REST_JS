@@ -1,4 +1,4 @@
-package ru.kata.spring.bootstrap.models;
+package ru.kata.spring.REST_JS.models;
 
 import lombok.Getter;
 import org.springframework.security.core.GrantedAuthority;

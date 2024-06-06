@@ -1,7 +1,7 @@
-package ru.kata.spring.bootstrap.dao;
+package ru.kata.spring.REST_JS.dao;
 
 import org.springframework.stereotype.Repository;
-import ru.kata.spring.bootstrap.models.Role;
+import ru.kata.spring.REST_JS.models.Role;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Repository
-public class RoleDaoImpl implements RoleDao {
+public class RoleDaoImpl implements ru.kata.spring.REST_JS.dao.RoleDao {
     @PersistenceContext
     private EntityManager entityManager;
 

@@ -1,12 +1,12 @@
-package ru.kata.spring.bootstrap;
+package ru.kata.spring.REST_JS;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
-import ru.kata.spring.bootstrap.service.RoleService;
-import ru.kata.spring.bootstrap.service.UserService;
-import ru.kata.spring.bootstrap.models.Role;
-import ru.kata.spring.bootstrap.models.User;
+import ru.kata.spring.REST_JS.service.RoleService;
+import ru.kata.spring.REST_JS.service.UserService;
+import ru.kata.spring.REST_JS.models.Role;
+import ru.kata.spring.REST_JS.models.User;
 
 import java.util.HashSet;
 import java.util.Set;
