@@ -9,7 +9,7 @@ import ru.kata.spring.REST_JS.models.Role;
 import java.util.List;
 
 @Service
-public class RoleServiceImpl implements ru.kata.spring.REST_JS.service.RoleService {
+public class RoleServiceImpl implements RoleService {
     private final RoleDao roleDao;
 
     @Autowired
